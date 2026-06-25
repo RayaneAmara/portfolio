@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rayane Amara — Portfolio BTS SIO SISR</title>
+  <meta name="description" content="Portfolio de Rayane Amara, étudiant en BTS SIO option SISR : réseaux, systèmes, administration et projets IT.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2026c">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Rayane Amara</a>
+
+    <!-- GlassIcons — navigation (porté de React Bits) -->
+    <div class="nav-glass icon-btns gi-nav" aria-label="Navigation rapide">
+      <a href="#qui" class="icon-btn" aria-label="À propos">
+        <span class="icon-btn__back" style="background:linear-gradient(#4ade80,#16a34a)"></span>
+        <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span></span>
+        <span class="icon-btn__label">À propos</span>
+      </a>
+      <a href="#competences" class="icon-btn" aria-label="Compétences">
+        <span class="icon-btn__back" style="background:linear-gradient(#25e970,#238926)"></span>
+        <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span></span>
+        <span class="icon-btn__label">Compétences</span>
+      </a>
+      <a href="#projets" class="icon-btn" aria-label="Projets">
+        <span class="icon-btn__back" style="background:linear-gradient(#22c55e,#15803d)"></span>
+        <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span></span>
+        <span class="icon-btn__label">Projets</span>
+      </a>
+      <a href="#cv" class="icon-btn" aria-label="Mon CV">
+        <span class="icon-btn__back" style="background:linear-gradient(#34d399,#065f46)"></span>
+        <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span></span>
+        <span class="icon-btn__label">Mon CV</span>
+      </a>
+      <a href="#contact" class="icon-btn" aria-label="Contact">
+        <span class="icon-btn__back" style="background:linear-gradient(#238926,#022509)"></span>
+        <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span></span>
+        <span class="icon-btn__label">Contact</span>
+      </a>
+      <a href="CV_Portfolio_Rayane_Amara.pdf" download class="icon-btn" aria-label="Télécharger CV">
+        <span class="icon-btn__back" style="background:linear-gradient(#16a34a,#14532d)"></span>
+        <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></span>
+        <span class="icon-btn__label">Télécharger</span>
+      </a>
+    </div>
+
+    <!-- Menu texte (mobile) -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#qui">Qui je suis</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact" class="nav-cta">Me contacter</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero">
+
+  <div class="corner corner-tl">
+    <span class="corner-line"></span>
+    <span>Portfolio · 2026</span>
+  </div>
+  <div class="corner corner-tr">
+    <span>{ BTS SIO — SISR }</span>
+  </div>
+
+  <!-- Décor (blobs + étoiles) -->
+  <div class="blobs" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob-grain"></div>
+    <svg class="orbit" viewBox="0 0 560 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="280" cy="110" rx="256" ry="95" stroke="#238926" stroke-width="1.2"/>
+    </svg>
+    <svg class="sparkle sp1" viewBox="0 0 24 24" fill="#238926"><path d="M12 0C12 0 12.8 9.2 14.8 12C16.8 14.8 24 12 24 12C24 12 14.8 12.8 12 14.8C9.2 16.8 12 24 12 24C12 24 11.2 14.8 9.2 12C7.2 9.2 0 12 0 12C0 12 9.2 11.2 12 9.2C14.8 7.2 12 0 12 0Z"/></svg>
+    <svg class="sparkle sp2" viewBox="0 0 24 24" fill="#238926"><path d="M12 0C12 0 12.8 9.2 14.8 12C16.8 14.8 24 12 24 12C24 12 14.8 12.8 12 14.8C9.2 16.8 12 24 12 24C12 24 11.2 14.8 9.2 12C7.2 9.2 0 12 0 12C0 12 9.2 11.2 12 9.2C14.8 7.2 12 0 12 0Z"/></svg>
+    <svg class="sparkle sp3" viewBox="0 0 24 24" fill="#238926"><path d="M12 0C12 0 12.8 9.2 14.8 12C16.8 14.8 24 12 24 12C24 12 14.8 12.8 12 14.8C9.2 16.8 12 24 12 24C12 24 11.2 14.8 9.2 12C7.2 9.2 0 12 0 12C0 12 9.2 11.2 12 9.2C14.8 7.2 12 0 12 0Z"/></svg>
+  </div>
+
+  <!-- Titre géant (VariableProximity) -->
+  <h1 class="hero-title" id="heroTitle" aria-label="PORTFOLIO">PORTFOLIO</h1>
+
+  <!-- Lentille de verre qui suit la souris (FluidGlass) -->
+  <div class="glass-lens" id="glassLens" aria-hidden="true"></div>
+
+  <!-- Présentation claire -->
+  <div class="hero-intro">
+    <p class="hero-tagline">Bonjour, je m'appelle <strong>Rayane Amara</strong>.</p>
+    <p class="hero-sub">Étudiant en BTS SIO option <strong>SISR</strong> — réseaux, systèmes &amp; administration.</p>
+    <p class="hero-welcome">Ce site présente <strong>qui je suis</strong>, <strong>mes compétences techniques</strong> et <strong>mes projets</strong>. Fais défiler pour commencer.</p>
+  </div>
+
+  <a href="#guide" class="hero-start">
+    <span>Commencer la visite</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </a>
+
+  <!-- CardSwap — pile de cartes animées (porté de React Bits / GSAP) -->
+  <div class="card-swap-container" id="cardSwap" style="width:360px;height:250px" aria-hidden="true">
+    <div class="card cs-card cs-card-1">
+      <span class="cs-card-tag">BTS SIO SISR · 2026</span>
+      <h3 class="cs-card-title">Rayane Amara</h3>
+      <p class="cs-card-body">Réseaux &amp; Systèmes · Le Pallet</p>
+      <span class="cs-card-badge">Disponible pour un stage</span>
+    </div>
+    <div class="card cs-card cs-card-2">
+      <span class="cs-card-tag">Réseaux &amp; Systèmes</span>
+      <h3 class="cs-card-title">Compétences</h3>
+      <div class="cs-pills">
+        <span>Cisco</span><span>Linux</span><span>Node.js</span><span>Python</span><span>SQL</span>
+      </div>
+      <span class="cs-card-badge">10+ technologies</span>
+    </div>
+    <div class="card cs-card cs-card-3">
+      <span class="cs-card-tag">Expérience</span>
+      <h3 class="cs-card-title">Stage E.Leclerc</h3>
+      <p class="cs-card-body">Supervision · Réseau · Support N1&amp;N2</p>
+      <span class="cs-card-badge">Voir plus bas</span>
+    </div>
+  </div>
+
+</header>
+
+<!-- ═══ GUIDE / SOMMAIRE ═══ -->
+<section id="guide" class="guide reveal">
+  <div class="section-inner">
+    <p class="guide-lead">Ce site est tout simple : il a <strong>4 parties</strong>. Clique sur celle qui t'intéresse.</p>
+    <div class="guide-grid">
+      <a href="#qui" class="guide-card">
+        <span class="guide-num">1</span>
+        <span class="guide-card-title">Qui je suis</span>
+        <span class="guide-card-desc">Une présentation rapide de moi</span>
+      </a>
+      <a href="#competences" class="guide-card">
+        <span class="guide-num">2</span>
+        <span class="guide-card-title">Mes compétences</span>
+        <span class="guide-card-desc">Les outils que je sais utiliser</span>
+      </a>
+      <a href="#projets" class="guide-card">
+        <span class="guide-num">3</span>
+        <span class="guide-card-title">Mes projets</span>
+        <span class="guide-card-desc">Ce que j'ai créé pendant ma formation</span>
+      </a>
+      <a href="#contact" class="guide-card">
+        <span class="guide-num">4</span>
+        <span class="guide-card-title">Me contacter</span>
+        <span class="guide-card-desc">Pour m'envoyer un message</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 1 · QUI JE SUIS ═══ -->
+<section id="qui" class="section reveal">
+  <div class="section-inner">
+    <div class="section-eyebrow">
+      <span class="eyebrow-num">Partie 1</span>
+      <span class="eyebrow-text">Qui je suis</span>
+    </div>
+    <h2 class="section-heading">Qui je suis</h2>
+    <p class="section-intro">En bref : voici mon prénom, mon école et ce que j'aime faire en informatique.</p>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lead">
+          Je m'appelle <strong>Rayane Amara</strong>. Je suis en <strong>BTS SIO option SISR</strong>
+          au Lycée La Joliverie (Saint-Sébastien-sur-Loire) — première année validée.
+        </p>
+        <p class="about-body">
+          Passionné par les <strong>infrastructures réseaux</strong>, l'<strong>administration système</strong>
+          et le développement, j'ai effectué un stage chez <strong>E.Leclerc</strong> où j'ai administré des
+          serveurs (caisse, NAS, ToIP), géré le câblage en baies techniques et assuré le support N1&amp;N2.
+          J'aime quand une solution est simple, fiable et bien documentée.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">BTS</span>
+            <span class="stat-label">SIO — SISR</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2026</span>
+            <span class="stat-label">Stage E.Leclerc effectué</span>
+          </div>
+        </div>
+        <div class="about-tags">
+          <span class="info-chip">Le Pallet (44)</span>
+          <span class="info-chip">BTS SIO — SISR</span>
+          <span class="info-chip">amararayane200@gmail.com</span>
+          <span class="info-chip available">Disponible (stage / alternance)</span>
+        </div>
+      </div>
+
+      <figure class="about-photo">
+        <img src="2.jpg" alt="Photo de Rayane Amara" loading="lazy">
+        <figcaption>Rayane Amara</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 2 · COMPÉTENCES ═══ -->
+<section id="competences" class="section section-light reveal">
+  <div class="section-inner">
+    <div class="section-eyebrow">
+      <span class="eyebrow-num">Partie 2</span>
+      <span class="eyebrow-text">Mes compétences</span>
+    </div>
+    <h2 class="section-heading">Ce que je sais faire</h2>
+    <p class="section-intro">
+      Un <strong>langage</strong> sert à écrire des programmes. Un <strong>outil</strong> aide à travailler.
+      Voici ceux que je connais, rangés par familles.
+    </p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card orange glare">
+        <div class="skill-card-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          <span>Réseaux &amp; Architecture</span>
+        </div>
+        <div class="skill-pills">
+          <span>Cisco Packet Tracer</span><span>CLI Cisco</span><span>Switchs &amp; Routeurs</span><span>Modèle OSI &amp; TCP/IP</span><span>Baies de brassage</span>
+        </div>
+      </div>
+
+      <div class="skill-card blue glare">
+        <div class="skill-card-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <span>Systèmes &amp; OS</span>
+        </div>
+        <div class="skill-pills">
+          <span>Linux</span><span>Windows 10/11</span><span>Déploiement Postes</span>
+        </div>
+      </div>
+
+      <div class="skill-card purple glare">
+        <div class="skill-card-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>Développement &amp; Outils</span>
+        </div>
+        <div class="skill-pills">
+          <span>Node.js</span><span>Python</span><span>Scripting LUA</span><span>Requêtes SQL</span><span>Google Workspace</span>
+        </div>
+      </div>
+
+      <div class="skill-card dark glare">
+        <div class="skill-card-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span>Savoir-être &amp; Langues</span>
+        </div>
+        <div class="skill-pills">
+          <span>Curiosité technique</span><span>Autonomie</span><span>Rigueur</span><span>Anglais B2 (IT)</span><span>Espagnol A1</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 3 · PROJETS (ScrollStack) ═══ -->
+<section id="projets" class="section reveal">
+  <div class="section-inner">
+    <div class="section-eyebrow">
+      <span class="eyebrow-num">Partie 3</span>
+      <span class="eyebrow-text">Mes projets</span>
+    </div>
+    <h2 class="section-heading">Mes projets</h2>
+    <p class="section-intro">
+      Un projet = un travail concret que j'ai réalisé en cours.
+      Voici les principaux, avec à chaque fois <strong>ce que j'ai fait</strong> et les <strong>compétences</strong> mises en œuvre.
+    </p>
+
+    <div class="scroll-stack" id="projectStack">
+
+      <!-- Projet 1 -->
+      <article class="scroll-stack-card project-stack-card">
+        <div class="psc-top">
+          <span class="psc-num">Projet 1</span>
+          <div class="psc-techs">
+            <span class="tech-tag orange-tag">Python</span>
+            <span class="tech-tag orange-tag">SQL</span>
+            <span class="tech-tag orange-tag">PowerShell</span>
+            <span class="tech-tag orange-tag">MariaDB</span>
+          </div>
+        </div>
+
+        <h3 class="psc-title">Créer automatiquement des comptes et des bases de données</h3>
+
+        <p class="psc-plain">
+          <strong>En clair :</strong> dans une entreprise, chaque employé a besoin de son propre espace
+          pour ranger ses données. Au lieu de le faire à la main pour chaque personne (très long !),
+          j'ai écrit un <strong>programme qui le fait tout seul</strong>.
+        </p>
+
+        <p class="psc-desc">
+          <strong>Projet réalisé en cours</strong> (BTS SIO), à partir d'un cas d'école : l'entreprise
+          <strong>STESIO</strong>. J'ai utilisé <strong>PowerShell</strong> pour récupérer la liste
+          des employés, puis un script <strong>Python</strong> pour générer leurs identifiants, des mots de passe
+          solides et le code <strong>SQL</strong> qui crée chaque base de données <strong>MariaDB</strong> avec les
+          bons droits d'accès.
+        </p>
+
+        <details class="comp-drop">
+          <summary>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            Voir les compétences que j'ai utilisées
+          </summary>
+          <ul>
+            <li>Comprendre le besoin d'une entreprise</li>
+            <li>Créer un programme en Python</li>
+            <li>Automatiser des tâches répétitives</li>
+            <li>Gérer les droits d'accès d'une base de données</li>
+            <li>Tester et écrire la documentation</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Projet 2 -->
+      <article class="scroll-stack-card project-stack-card">
+        <div class="psc-top">
+          <span class="psc-num">Projet 2</span>
+          <div class="psc-techs">
+            <span class="tech-tag blue-tag">Docker</span>
+            <span class="tech-tag blue-tag">Docker Compose</span>
+            <span class="tech-tag blue-tag">Git</span>
+            <span class="tech-tag blue-tag">Linux</span>
+          </div>
+        </div>
+
+        <h3 class="psc-title">Mettre une application dans une « boîte » avec Docker</h3>
+
+        <p class="psc-plain">
+          <strong>En clair :</strong> une application ne marche pas toujours pareil d'un ordinateur à l'autre.
+          Avec <strong>Docker</strong>, on la range dans une « boîte » (un conteneur) qui contient tout ce qu'il faut.
+          Comme ça, elle marche <strong>partout, pareil</strong>.
+        </p>
+
+        <p class="psc-desc">
+          Réalisé avec <strong>Jules Dupin</strong>. Nous avons écrit un <strong>Dockerfile</strong> (la recette de la boîte),
+          puis utilisé <strong>Docker Compose</strong> pour lancer en même temps l'application et sa base de données,
+          chacune dans sa propre boîte.
+        </p>
+
+        <details class="comp-drop">
+          <summary>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            Voir les compétences que j'ai utilisées
+          </summary>
+          <ul>
+            <li>Mettre une application dans un conteneur Docker</li>
+            <li>Écrire un Dockerfile (la « recette »)</li>
+            <li>Lancer plusieurs services avec Docker Compose</li>
+            <li>Travailler à deux avec Git</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Projet 3 -->
+      <article class="scroll-stack-card project-stack-card">
+        <div class="psc-top">
+          <span class="psc-num">Projet 3</span>
+          <div class="psc-techs">
+            <span class="tech-tag purple-tag">Arduino</span>
+            <span class="tech-tag purple-tag">Électronique</span>
+            <span class="tech-tag purple-tag">Embarqué</span>
+          </div>
+        </div>
+
+        <h3 class="psc-title">Électronique embarquée — Projets techniques Arduino</h3>
+
+        <p class="psc-plain">
+          <strong>En clair :</strong> l'Arduino est une petite carte électronique programmable.
+          J'ai conçu et assemblé des <strong>projets concrets</strong> : capteurs, actionneurs,
+          prototypes fonctionnels.
+        </p>
+
+        <p class="psc-desc">
+          Réalisation et maquettage de projets techniques autour de l'écosystème <strong>Arduino</strong> :
+          montage de circuits, programmation en C embarqué, tests et validation des prototypes.
+          Approche orientée ingénierie et résolution de problèmes matériels.
+        </p>
+
+        <details class="comp-drop">
+          <summary>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            Voir les compétences mobilisées
+          </summary>
+          <ul>
+            <li>Concevoir et câbler un circuit électronique</li>
+            <li>Programmer un microcontrôleur (Arduino / C)</li>
+            <li>Tester et valider un prototype</li>
+            <li>Résoudre des problèmes matériels et logiciels</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Projet 4 -->
+      <article class="scroll-stack-card project-stack-card">
+        <div class="psc-top">
+          <span class="psc-num">Projet 4</span>
+          <div class="psc-techs">
+            <span class="tech-tag green-tag">VMware</span>
+            <span class="tech-tag green-tag">Cisco</span>
+            <span class="tech-tag green-tag">Linux</span>
+            <span class="tech-tag green-tag">DNS</span>
+            <span class="tech-tag green-tag">HTTPS / SSL</span>
+          </div>
+        </div>
+
+        <h3 class="psc-title">Projet GSB Archi-Site — Architecture réseau sécurisée multi-serveurs</h3>
+
+        <p class="psc-plain">
+          <strong>En clair :</strong> un laboratoire voulait un site interne pour gérer les
+          comptes-rendus et frais de ses visiteurs médicaux. Avec mon équipe, nous avons construit
+          toute l'<strong>infrastructure réseau</strong> qui fait tourner ce site de façon sécurisée.
+        </p>
+
+        <p class="psc-desc">
+          Projet de groupe (à <strong>3 personnes</strong>) réalisé en BTS SIO SISR. Mise en place d'une
+          architecture répartie sous <strong>VMware</strong> : serveur <strong>Web en DMZ</strong> (HTTPS/SSL),
+          serveur de <strong>base de données</strong>, serveur <strong>DNS</strong> et serveur de
+          <strong>sauvegarde</strong>, le tout segmenté en réseaux <strong>PROD / DMZ</strong> derrière un
+          pare-feu, avec routeurs et switch <strong>Cisco</strong> et un service <strong>FTP</strong> interne
+          authentifié pour les développeurs.
+        </p>
+
+        <details class="comp-drop">
+          <summary>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            Voir les compétences que j'ai utilisées
+          </summary>
+          <ul>
+            <li>Concevoir une architecture réseau segmentée (PROD / DMZ)</li>
+            <li>Virtualiser des serveurs Linux & Windows avec VMware</li>
+            <li>Configurer DNS, serveur Web sécurisé (HTTPS/SSL) et FTP</li>
+            <li>Mettre en place une base de données et des sauvegardes</li>
+            <li>Configurer des routeurs et switch Cisco</li>
+            <li>Travailler en équipe et rédiger la documentation technique</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Carte finale : appel à l'action -->
+      <article class="scroll-stack-card cta-card">
+        <h3 class="cta-title">Tu veux en savoir plus sur moi ?</h3>
+        <p class="cta-text">Regarde mon CV ou écris-moi un message — je réponds vite !</p>
+        <div class="cta-actions">
+          <a href="#cv" class="btn-primary">Voir mon CV</a>
+          <a href="#contact" class="btn-outline">M'envoyer un message</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CV ═══ -->
+<section id="cv" class="section section-light reveal">
+  <div class="section-inner">
+    <div class="section-eyebrow">
+      <span class="eyebrow-num">Bonus</span>
+      <span class="eyebrow-text">Mon CV</span>
+    </div>
+    <h2 class="section-heading">Mon CV</h2>
+    <p class="section-intro">Clique sur l'image pour l'agrandir, ou télécharge le PDF.</p>
+
+    <div class="cv-layout">
+      <div class="cv-left">
+        <p class="cv-desc">Clique sur l'image pour la voir en grand, ou télécharge directement le PDF.</p>
+        <a href="CV_Portfolio_Rayane_Amara.pdf" download="CV_Rayane_Amara.pdf" class="btn-primary glare">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger le CV (PDF)
+        </a>
+      </div>
+      <div class="cv-frame" id="cvFrame">
+        <img src="1.png" id="cvImage" alt="CV de Rayane Amara" loading="lazy">
+        <div class="cv-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Clique pour agrandir</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 4 · CONTACT ═══ -->
+<section id="contact" class="section contact-section reveal glare">
+  <div class="section-inner">
+    <div class="section-eyebrow">
+      <span class="eyebrow-num">Partie 4</span>
+      <span class="eyebrow-text">Me contacter</span>
+    </div>
+    <div class="contact-layout">
+      <h2 class="contact-heading">Une question ?<br><span class="heading-accent">Écris-moi !</span></h2>
+      <div class="contact-right">
+        <p class="contact-sub">Le plus simple est de m'envoyer un email. Clique sur mon adresse, ça ouvre ta messagerie.</p>
+        <a href="mailto:amararayane200@gmail.com" class="contact-email">
+          amararayane200@gmail.com
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <div class="contact-meta">
+          <span>Le Pallet (44)</span>
+          <span class="meta-dot">·</span>
+          <span>BTS SIO — SISR</span>
+          <span class="meta-dot">·</span>
+          <span>07 68 45 90 95</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-blobs" aria-hidden="true">
+    <div class="cblob cblob-a"></div>
+    <div class="cblob cblob-b"></div>
+    <div class="cblob-grain"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span>© Rayane Amara</span>
+  <span class="footer-dot">·</span>
+  <span>Portfolio 2026</span>
+  <span class="footer-dot">·</span>
+  <span>BTS SIO — SISR</span>
+</footer>
+
+<!-- MODAL CV -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="CV agrandi">
+  <button id="closeModal" class="modal-close" aria-label="Fermer">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <img id="modalImg" class="modal-img" alt="CV de Rayane Amara">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+  // ── Navbar au scroll ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  }, { passive: true });
+
+  // ── Menu burger (mobile) ──
+  const burger = document.getElementById('burger');
+  const navLinks = document.querySelector('.nav-links');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a =>
+    a.addEventListener('click', () => { burger.classList.remove('open'); navLinks.classList.remove('open'); })
+  );
+
+  // ── CardSwap — pile de cartes animées (porté de React Bits / GSAP) ──
+  (function () {
+    const container = document.getElementById('cardSwap');
+    if (!container || typeof gsap === 'undefined') return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const cards = Array.from(container.querySelectorAll('.card'));
+    const total = cards.length;
+    if (total < 2) return;
+    const DIST = 60, VERT = 70, SKEW = 6, DELAY = 5000;
+    const cfg = { ease: 'elastic.out(0.6,0.9)', durDrop: 2, durMove: 2, durReturn: 2, promoteOverlap: 0.9, returnDelay: 0.05 };
+    function slot(i) { return { x: i * DIST, y: -i * VERT, z: -i * DIST * 1.5, zIndex: total - i }; }
+    cards.forEach((card, i) => {
+      const s = slot(i);
+      gsap.set(card, { x: s.x, y: s.y, z: s.z, xPercent: -50, yPercent: -50, skewY: SKEW, transformOrigin: 'center center', zIndex: s.zIndex, force3D: true });
+    });
+    let order = cards.map((_, i) => i);
+    function swap() {
+      if (order.length < 2) return;
+      const [front, ...rest] = order;
+      const elFront = cards[front];
+      const tl = gsap.timeline();
+      tl.to(elFront, { y: '+=500', duration: cfg.durDrop, ease: cfg.ease });
+      tl.addLabel('promote', `-=${cfg.durDrop * cfg.promoteOverlap}`);
+      rest.forEach((idx, i) => {
+        const s = slot(i);
+        tl.set(cards[idx], { zIndex: s.zIndex }, 'promote');
+        tl.to(cards[idx], { x: s.x, y: s.y, z: s.z, duration: cfg.durMove, ease: cfg.ease }, `promote+=${i * 0.15}`);
+      });
+      const back = slot(cards.length - 1);
+      tl.addLabel('return', `promote+=${cfg.durMove * cfg.returnDelay}`);
+      tl.call(() => gsap.set(elFront, { zIndex: back.zIndex }), undefined, 'return');
+      tl.to(elFront, { x: back.x, y: back.y, z: back.z, duration: cfg.durReturn, ease: cfg.ease }, 'return');
+      tl.call(() => { order = [...rest, front]; });
+    }
+    swap();
+    setInterval(swap, DELAY);
+  })();
+
+
+  // ── Modal CV ──
+  const modal      = document.getElementById('modal');
+  const cvImage    = document.getElementById('cvImage');
+  const modalImg   = document.getElementById('modalImg');
+  const closeModal = document.getElementById('closeModal');
+  const openModal  = () => { modal.classList.add('open'); modalImg.src = cvImage.src; document.body.style.overflow = 'hidden'; };
+  const closeM     = () => { modal.classList.remove('open'); document.body.style.overflow = ''; };
+  cvImage.addEventListener('click', openModal);
+  document.querySelector('.cv-overlay').addEventListener('click', openModal);
+  closeModal.addEventListener('click', closeM);
+  modal.addEventListener('click', e => { if (e.target === modal) closeM(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
+
+  // ── Apparition au scroll ──
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ── VariableProximity — titre du hero (porté de React Bits) ──
+  (function () {
+    const titleEl = document.getElementById('heroTitle');
+    if (!titleEl) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const text = titleEl.getAttribute('aria-label') || titleEl.textContent;
+    titleEl.textContent = '';
+    const letters = [...text].map(ch => {
+      const s = document.createElement('span');
+      s.className = 'vp-letter';
+      s.textContent = ch;
+      s.setAttribute('aria-hidden', 'true');
+      titleEl.appendChild(s);
+      return s;
+    });
+    const FROM = { wght: 600, opsz: 40 };
+    const TO   = { wght: 1000, opsz: 144 };
+    if (reduce) {
+      letters.forEach(l => l.style.fontVariationSettings = "'wght' 800, 'opsz' 144");
+      return;
+    }
+    const RADIUS = 200;
+    let mx = -9999, my = -9999, active = false;
+    window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; active = true; }, { passive: true });
+    letters.forEach(l => l.style.fontVariationSettings = `'wght' ${FROM.wght}, 'opsz' ${FROM.opsz}`);
+    function loop() {
+      if (active) {
+        for (const l of letters) {
+          const r = l.getBoundingClientRect();
+          const d = Math.hypot(mx - (r.left + r.width / 2), my - (r.top + r.height / 2));
+          const t = Math.min(Math.max(1 - d / RADIUS, 0), 1);
+          const w = Math.round(FROM.wght + (TO.wght - FROM.wght) * t);
+          const o = Math.round(FROM.opsz + (TO.opsz - FROM.opsz) * t);
+          l.style.fontVariationSettings = `'wght' ${w}, 'opsz' ${o}`;
+        }
+      }
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  })();
+
+  // ── FluidGlass : lentille qui suit la souris dans le hero ──
+  (function () {
+    const hero = document.querySelector('.hero');
+    const lens = document.getElementById('glassLens');
+    if (!hero || !lens) return;
+    if (!window.matchMedia('(pointer: fine)').matches ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      lens.remove();
+      return;
+    }
+    hero.addEventListener('pointermove', e => {
+      const rect = hero.getBoundingClientRect();
+      lens.style.transform =
+        `translate(${e.clientX - rect.left}px, ${e.clientY - rect.top}px) translate(-50%, -50%)`;
+      lens.style.opacity = '1';
+    });
+    hero.addEventListener('pointerleave', () => { lens.style.opacity = '0'; });
+  })();
+</script>
+</body>
+</html>
